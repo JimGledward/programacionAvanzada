@@ -1,12 +1,60 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <h:head>
-        <title>Facelet Title</title>
-    </h:head>
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
     <h:body>
-        Hello from Facelets
+        <ui:composition template = "template/Template.xhtml">
+            <ui:define name = "tittle"> Centaurus Bank - Home </ui:define>
+            <ui:define name = "content"> 
+                <section id="one">
+                    <header class="major">
+                        <h2> Portal de crédito - Centaurus Bank </h2>
+                    </header>
+                    <p> El banco pensando en sus clientes, ha creado este portal
+                        de transaccines con el fin de colaborar con la agilización 
+                        de la solicitud y aprobación de créditos. 
+                        Por medio de este usted podrá solicitar tarjetas de crédito
+                        y créditos de consumo con lo que obtendrá una respuesta a su 
+                        correo electronico en poco tiempo. </p>
+                    <ul class="actions">
+                        <li><a href="bienvenida.xhtml" class="button"> Leer mas... </a></li>
+                    </ul>
+                </section>
+                <section id="two">
+                    <h2>Servicios</h2>
+                    <div class="row">
+                        <article>
+                            <a href="solCredito.xhtml" class="image fit thumb">
+                                <img src="images/thumbs/05.jpg" alt="" />
+                            </a>
+                            <h3>Crédito de consumo</h3>
+                            <p>Son líneas de crédito con un cupo aprobado previamente
+                                aprobado por el banco, del cual el cliente puede disponer 
+                                cuando lo requira. En la medida que se hacen los pagos, se
+                                irá liberando cupo que posteriormente se puede volver a usar.</p>
+                        </article>
+                        <article>
+                            <a href="solTarCredito.xhtml" class="image fit thumb">
+                                <img src="images/thumbs/06.jpg" alt="" />
+                            </a>
+                            <h3>Tarjeta de crédito</h3>
+                            <p>Permiten diferir el pago de un bien, producto o servicio 
+                            en cuotas mensuales durante un tiempo de 12 a 36 meses; dicho plazo
+                            es definido por el cliente en el momento de la compra.</p>
+                        </article>
+                    </div>
+                </section>
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.poptrox.min.js"></script>
+                <script src="assets/js/skel.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
+
+            </ui:define>
+        </ui:composition>
     </h:body>
 </html>
 
