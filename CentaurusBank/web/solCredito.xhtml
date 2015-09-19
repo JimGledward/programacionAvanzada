@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://java.sun.com/jsf/facelets">
-
+    
     <h:body>
         <ui:composition template = "template/Template.xhtml">
             <ui:define name = "tittle"> Solicitud de crédito </ui:define>
@@ -28,6 +28,17 @@
                     - Se puede utilizar como y cuando se necesite.<br/>
                     - Permite decidir qué cantidad del cupo se utiliza (total o parcial). <br/>
                     - Los pagos realizados por el cliente liberan el crédito nuevamente.<br/>
+                    <!-- Formulario de registro -->
+                    <hr/>
+                    <h:form id="solCredito">
+                        <center> <h2> Formulario de creación </h2> </center>
+                        <label id="icon" for="name"><i class="icon-envelope "></i></label>
+                        <input type="text" name="name" id="name" placeholder="Email"  required="true"/>
+                        <label id="icon" for="name"><i class="icon-user"></i></label>
+                        <input type="text" name="name" id="name" placeholder="Name" required="true"/>
+                        <label id="icon" for="name"><i class="icon-shield"></i></label>
+                        <input type="password" name="name" id="name" placeholder="Password" required="true"/>
+                    </h:form>
                 </section>
             </ui:define>
         </ui:composition>
